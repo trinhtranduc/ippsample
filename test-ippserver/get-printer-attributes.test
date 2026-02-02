@@ -1,0 +1,9 @@
+{
+    OPERATION Get-Printer-Attributes
+    GROUP operation-attributes-tag
+    ATTR charset attributes-charset utf-8
+    ATTR naturalLanguage attributes-natural-language en
+    ATTR uri printer-uri $uri
+    GROUP printer-attributes-tag
+    ATTR keyword requested-attributes printer-name,printer-state,printer-state-reasons,media-ready,document-format-supported,printer-resolution-supported
+}

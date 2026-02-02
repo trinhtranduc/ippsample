@@ -1413,7 +1413,7 @@ send_printer_payload(
               "\t\t\t\t\t\t<key>Port</key>\n"
               "\t\t\t\t\t\t<integer>%d</integer>\n"
               "\t\t\t\t\t\t<key>ForceTLS</key>\n"
-              "\t\t\t\t\t\t<true />\n"
+              "\t\t\t\t\t\t<false />\n"
               "\t\t\t\t\t</dict>\n"
               "\t\t\t\t</array>\n"
               "\t\t\t</dict>\n", ServerName, uuid, uuid, make_and_model ? make_and_model : "unknown", printer->dns_sd_name, ServerName, printer->resource, DefaultPort);

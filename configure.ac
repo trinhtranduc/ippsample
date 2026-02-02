@@ -103,6 +103,10 @@ AS_IF([test "x$CURAENGINE" != x], [
 dnl install-sh
 AC_MSG_CHECKING([for install-sh script])
 INSTALL="$(pwd)/install-sh"
+# Quote the path if it contains spaces
+case "$INSTALL" in
+  *\ *) INSTALL="\"$INSTALL\"" ;;
+esac
 AC_SUBST([INSTALL])
 AC_MSG_RESULT([using $INSTALL])
 
